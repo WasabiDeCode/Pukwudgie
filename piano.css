@@ -1,0 +1,71 @@
+/* Piano container styling */
+.piano-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Piano layout */
+.piano {
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* White keys */
+.key.white {
+    background: #fff;
+    border: 1px solid #ccc;
+    flex: 1;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Black keys */
+.key.black {
+    background: #000;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Correct positioning of black keys relative to white keys */
+.key.white:nth-child(2) ~ .key.black:nth-child(2),
+.key.white:nth-child(4) ~ .key.black:nth-child(4),
+.key.white:nth-child(7) ~ .key.black:nth-child(7),
+.key.white:nth-child(9) ~ .key.black:nth-child(9),
+.key.white:nth-child(12) ~ .key.black:nth-child(12) {
+    left: calc(100% - 20%);
+}
+
+/* Highlight active key */
+.key.active {
+    background: #8db600 !important; /* Green highlight for active key */
+    color: #fff;
+}

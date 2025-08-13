@@ -1,0 +1,265 @@
+/* Global Styles */
+body {
+    height: 100%;
+    font-family: "Just Another Hand", cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/army.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; /* This ensures the image covers full screen */
+    color: #f4f4f4;
+    padding-top: 80px;
+    position: relative;
+}
+
+
+/* Overlay shade */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    z-index: -1;
+}
+
+/* Punk Fonts */
+h1, h2, h3, .logo a {
+    font-family: "Rubik Glitch", system-ui; /* Edgy punk font for titles */
+    text-transform: uppercase;
+    color: #8db600; /* Primary green for titles */
+    font-weight: 400;
+  font-style: normal;
+}
+
+.logo img {
+  height: 110px; /* Adjust as needed */
+  width: auto;
+  padding-top: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #111; /* Deep black for a bold navbar */
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+    border-bottom: 2px solid #8f00ff; /* Purple accent */
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    color: #f4f4f4;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid #8db600;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #8f00ff;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?band,music') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0px #8db600;
+}
+
+.hero-content p {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+/* Blurred Button Styles */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blurred-btn {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 3px solid white;
+}
+
+.blurred-btn:hover {
+    transform: scale(1.1);
+    border-color: #8f00ff;
+}
+
+.blurred-btn span {
+    z-index: 2;
+    font-weight: bold;
+}
+
+.btn-about { background-image: url('https://source.unsplash.com/150x150/?about,band'); }
+.btn-music { background-image: url('https://source.unsplash.com/150x150/?music,sound'); }
+.btn-tour { background-image: url('https://source.unsplash.com/150x150/?tour,concert'); }
+.btn-contact { background-image: url('https://source.unsplash.com/150x150/?contact,people'); }
+
+/* Image Frames */
+.image-frame {
+    border: 5px solid #8db600;
+    padding: 5px;
+    margin: 20px auto;
+    display: block;
+    max-width: 80%;
+    box-shadow: 5px 5px 0px #000;
+    transition: transform 0.3s ease;
+}
+
+.image-frame:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #8f00ff;
+}
+
+/* Page Section Styles */
+.page-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: rgba(26, 26, 26, 0.9);
+    color: #f4f4f4;
+    margin-top: 80px;
+    border-top: 2px dashed #8db600;
+}
+
+/* Shop Section */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    border: 1px solid #8db600;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 22%;
+    box-sizing: border-box;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product .product-title {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000; /* Black */
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.product .product-description {
+    font-size: 16px;
+    color: #000; /* Black */
+    margin-bottom: 15px;
+}
+
+.product .product-price {
+    font-size: 20px;
+    color: #000; /* Black */
+    font-weight: bold;
+}
