@@ -15,6 +15,8 @@
               <img src="images/Pukwudgie.png" alt="Pukwudgie Logo" />
           </a>
       </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
       <ul class="nav-links">
           <li><a href="about.html">La Banda</a></li>
           <li><a href="music.html">La Música</a></li>
@@ -28,38 +30,39 @@
     <!-- Shop Section -->
     <div class="shop-section">
         <div class="product">
-            <img src="https://via.placeholder.com/250x250" alt="T-shirt">
-            <div class="product-title">Band T-shirt</div>
-            <div class="product-description">A stylish band T-shirt to rock with your favorite tunes!</div>
-            <div class="product-price">$25.00</div>
+            <img src="images/playera.jpg" alt="T-shirt">
+            <div class="product-title">T-shirt Altitud TV</div>
+            <div class="product-description">Playera conmemorativa del Festiarte 2025 celebrado en CECUT Tijuana. Incluye a más bandas de la familia Altitud.</div>
+            <div class="product-price">$250.00 MXN</div>
         </div>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/250x250" alt="Record">
-            <div class="product-title">Limited Edition Vinyl</div>
-            <div class="product-description">Get your hands on a limited edition vinyl record of our latest album.</div>
-            <div class="product-price">$40.00</div>
-        </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/250x250" alt="Sticker Pack">
+            <img src="images/mientras.jpg" alt="Sticker Pack">
             <div class="product-title">Sticker Pack</div>
-            <div class="product-description">A collection of cool stickers to personalize your gear!</div>
-            <div class="product-price">$10.00</div>
+            <div class="product-description">Colecciona todos los estilos de Biscuit y demás stickers de la banda.</div>
+            <div class="product-price">$25.00 MXN</div>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/250x250" alt="Comic Book">
-            <div class="product-title">Band Comic Book</div>
-            <div class="product-description">An exclusive comic book that tells the band's origin story.</div>
-            <div class="product-price">$15.00</div>
+            <img src="images/mientras.jpg" alt="Comic Book">
+            <div class="product-title">Comic Oficial Pukwudgie</div>
+            <div class="product-description">(AGOTADO) Este producto aún está en camino.</div>
+            <div class="product-price">$120.00 MXN</div>
         </div>
 
         <div class="product">
-            <img src="https://via.placeholder.com/250x250" alt="Poster">
-            <div class="product-title">Tour Poster</div>
-            <div class="product-description">A high-quality poster from our latest tour!</div>
-            <div class="product-price">$20.00</div>
+            <img src="images/mientras.jpg" alt="Comic Book">
+            <div class="product-title">Grinder Mangnético</div>
+            <div class="product-description">Molino de hierbas finas especiales y espaciales. Para mayores de 18 años.</div>
+            <div class="product-price">$35.00 MXN</div>
+        </div>
+
+        <div class="product">
+            <img src="images/mientras.jpg" alt="Poster">
+            <div class="product-title">Show Poster</div>
+            <div class="product-description">Poster oficial firmado de cualquiera de nuestras tocadas.</div>
+            <div class="product-price">30.00 MXN</div>
         </div>
     </div>
 
@@ -67,6 +70,12 @@
     <footer>
         <p>&copy; 2025 BandName. All rights reserved.</p>
     </footer>
+
+    <script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    }
+    </script>
 
 </body>
 </html>

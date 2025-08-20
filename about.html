@@ -17,6 +17,8 @@
                 <img src="images/Pukwudgie.png" alt="Pukwudgie Logo" />
             </a>
         </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
         <ul class="nav-links">
             <li><a href="about.html">La Banda</a></li>
             <li><a href="music.html">La Música</a></li>
@@ -33,40 +35,42 @@
     <p>
         Pukwudgie es una banda de grunge que mezcla sonidos del punk y metal para generar un sonido único. Una explosión de arte, rock y psicodelia que nunca podrás olvidar.
     </p>
-
+    <p> Con influencias cómo Sublime, Alice in Chains, Björk, Incubus, Smashing Pumpkins, y más, Pukwudgie ha logrado un sonido único, además de una imagen distintiva teniendo a un criptido animado como mascota, una original tienda de merch, y un show en vivo inolvidable.</p>
+    <br>
     <h3>Miembros</h3>
 
     <div class="band-member" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-        <img src="images/alex.jpg" alt="Alex Ramirez" style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;" />
+        <img src="images/mali.jpg" alt="Mali Mothman" />
         <div>
             <h4>Mali Mothman - Vocalista Principal</h4>
-            <p>Mali no solo compone y canta las canciones de la banda. Además es la artista oficial de todo el universo Pukwudg</p>
+            <p>Mali no solo compone y canta las canciones de la banda. Además es la artista oficial de todo el universo Pukwudgie. Algunos escritos antiguos la reconocen como la madre legal de Biscuit.</p>
+        </div>
+    </div>
+    <br>
+    <div class="band-member" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+        <img src="images/luis.jpg" alt="Lou Perez"/>
+        <div>
+            <h4>Lou "Luisiano" Perez - Vocals & Lead Guitar</h4>
+            <p>Lou es la guitarra lider y la poderoza voz de grito de la banda. Se dice que si el sonido de su guitarra obtuviera una forma sería la de una araña.</p>
         </div>
     </div>
 
     <div class="band-member" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-        <img src="images/maria.jpg" alt="Maria Lopez" style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;" />
+        <img src="images/cris.jpg" alt="Cris Zapien" />
         <div>
-            <h4>Maria Lopez - Vocals & Rhythm Guitar</h4>
-            <p>Maria’s powerful vocals carry the emotional weight of our songs. Her rhythm guitar complements Alex’s leads, creating the rich textures that define our sound.</p>
+            <h4>Cris Zapien - Rhythm Guitar</h4>
+            <p>Cris dota a la banda de su estilo unico, lleno de funk y ritmos asincopados regalando ritmo y precision a la medida. </p>
         </div>
     </div>
 
     <div class="band-member" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-        <img src="images/javier.jpg" alt="Javier Cruz" style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;" />
+        <img src="images/adrian.jpg" alt="Adrian Solis"/>
         <div>
-            <h4>Javier Cruz - Bass</h4>
-            <p>Javier holds down the groove with his deep bass lines. His steady rhythm keeps the band tight and grounded during even the wildest shows.</p>
+            <h4>Adrian Solis - Drums</h4>
+            <p>Adrian es una fuerza imparable, un verdadero monstruo detras del kit de bateria que hace a todos vibrar. Cuando Pukwudgie toma el escenario, lo hace a su ritmo.</p>
         </div>
     </div>
 
-    <div class="band-member" style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-        <img src="images/sofia.jpg" alt="Sofia Morales" style="width: 100px; height: 100px; object-fit: cover; border-radius: 8px;" />
-        <div>
-            <h4>Sofia Morales - Drums</h4>
-            <p>Sofia’s dynamic drumming drives the energy forward. Her creative beats and impeccable timing make her an essential force behind the band’s sound.</p>
-        </div>
-    </div>
 </section>
 
 
@@ -74,5 +78,13 @@
     <footer>
         <p>&copy; 2024 Pukwudgie. All rights reserved.</p>
     </footer>
+
+    <script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+
 </body>
 </html>

@@ -14,6 +14,8 @@
               <img src="images/Pukwudgie.png" alt="Pukwudgie Logo" />
           </a>
       </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
       <ul class="nav-links">
           <li><a href="about.html">La Banda</a></li>
           <li><a href="music.html">La Música</a></li>
@@ -26,7 +28,7 @@
 
     <!-- Music Content -->
     <section id="music">
-        <h2>Our Music</h2>
+        <h2>Música Pukwudgie</h2>
         <p>Nuestro single "Wash it All Away (Swim) ya está disponible en todas las plataformas".</p>
 
         <!-- Spotify Embed -->
@@ -38,33 +40,51 @@
                     allowtransparency="true"
                     allow="encrypted-media"></iframe>
         </div>
+        \ <div class="spotify-embed">
+        <iframe src="https://open.spotify.com/embed/track/2GPJAe828Z72WkP7L1HWUH?si=caf12009e578496d"
+                width="100%"
+                height="380"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"></iframe>
+    </div>
     </section>
 
     <section id="music1">
-  <h2>Our Music</h2>
-  <p>Nuestro single "Wash it All Away (Swim)" ya está disponible en todas las plataformas.</p>
+      <h2>Música Nativa</h2>
+      <p>Escucha nuestro single "Early Son" y el demo de nuestra más nueva canción de forma exclusiva.</p>
 
-  <div class="audio-track">
-    <h3>Track 1 - Wash it All Away (Swim)</h3>
-    <audio controls>
-      <source src="audio/song1.wav" type="audio/wav" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+      <div id="audio-track-container">
+        <div class="audio-track">
+          <h3>Track 1 - Early Son</h3>
+          <audio controls>
+            <source src="audio/EarlySon.wav" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
 
-  <div class="audio-track">
-    <h3>Track 2 - Another Song</h3>
-    <audio controls>
-      <source src="audio/song2.wav" type="audio/wav" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-</section>
-
+        <div class="audio-track">
+          <h3>Track 2 - Solar End (Demo)</h3>
+          <audio controls>
+            <source src="audio/SolarEnd.mp4" type="audio/wav" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <br>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Pukwudgie. All rights reserved.</p>
     </footer>
+
+    <script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+
 </body>
 </html>

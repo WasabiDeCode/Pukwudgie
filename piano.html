@@ -13,6 +13,8 @@
             <img src="images/Pukwudgie.png" alt="Pukwudgie Logo" />
         </a>
     </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
     <ul class="nav-links">
         <li><a href="about.html">La Banda</a></li>
         <li><a href="music.html">La Música</a></li>
@@ -47,5 +49,11 @@
 
     <!-- Include the JavaScript -->
     <script src="piano.js"></script>
+    <script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
 </body>
 </html>
